@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="0" failed="1" skipped="12">
+  <reporter-output>
+    <line>
+      <![CDATA[chrome browser started]]>
+    </line>
+    <line>
+      <![CDATA[chrome browser started]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-01-23T16:18:41 IST" name="VitalGuard Suite" finished-at="2026-01-23T16:18:58 IST" duration-ms="16512">
+    <groups>
+    </groups>
+    <test started-at="2026-01-23T16:18:41 IST" name="chrome test" finished-at="2026-01-23T16:18:58 IST" duration-ms="16512">
+      <class name="tests.CalculatorFunctionalityTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext,java.lang.String,java.lang.String)[pri:0, instance:tests.CalculatorFunctionalityTest@7d8704ef]" started-at="2026-01-23T16:18:42 IST" name="setUp" finished-at="2026-01-23T16:18:47 IST" duration-ms="5195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f77b5cc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[chrome browser started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:tests.CalculatorFunctionalityTest@7d8704ef]" started-at="2026-01-23T16:18:47 IST" name="setUp" finished-at="2026-01-23T16:18:47 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="isFormHeadingPresent()[pri:1, instance:tests.CalculatorFunctionalityTest@7d8704ef]" started-at="2026-01-23T16:18:47 IST" name="isFormHeadingPresent" finished-at="2026-01-23T16:18:47 IST" duration-ms="0" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFormHeadingPresent -->
+        <test-method signature="isAgeFieldPresent()[pri:2, instance:tests.CalculatorFunctionalityTest@7d8704ef]" started-at="2026-01-23T16:18:47 IST" name="isAgeFieldPresent" finished-at="2026-01-23T16:18:47 IST" duration-ms="0" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isAgeFieldPresent -->
+        <test-method signature="isBloodPressureFieldPresent()[pri:4, instance:tests.CalculatorFunctionalityTest@7d8704ef]" started-at="2026-01-23T16:18:47 IST" name="isBloodPressureFieldPresent" finished-at="2026-01-23T16:18:47 IST" duration-ms="0" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isBloodPressureFieldPresent -->
+        <test-method signature="isPulseRateFieldPresent()[pri:3, instance:tests.CalculatorFunctionalityTest@7d8704ef]" started-at="2026-01-23T16:18:47 IST" name="isPulseRateFieldPresent" finished-at="2026-01-23T16:18:47 IST" duration-ms="0" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isPulseRateFieldPresent -->
+        <test-method signature="isCalculateButtonPresentAndClickable()[pri:5, instance:tests.CalculatorFunctionalityTest@7d8704ef]" started-at="2026-01-23T16:18:47 IST" name="isCalculateButtonPresentAndClickable" finished-at="2026-01-23T16:18:47 IST" duration-ms="1" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCalculateButtonPresentAndClickable -->
+        <test-method signature="sendData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:tests.CalculatorFunctionalityTest@7d8704ef]" started-at="2026-01-23T16:18:47 IST" name="sendData" data-provider="dp" finished-at="2026-01-23T16:18:47 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.RuntimeException: Failed to load AI Test Data from Excel: src\test\resources\testdata\AI_TestData.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.RuntimeException: Failed to load AI Test Data from Excel: src\test\resources\testdata\AI_TestData.xlsx (The system cannot find the path specified)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: java.lang.RuntimeException: Failed to load AI Test Data from Excel: src\test\resources\testdata\AI_TestData.xlsx (The system cannot find the path specified)
+at tests.CalculatorFunctionalityTest.dp(CalculatorFunctionalityTest.java:398)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
+... 24 more
+Caused by: java.io.FileNotFoundException: src\test\resources\testdata\AI_TestData.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at tests.CalculatorFunctionalityTest.dp(CalculatorFunctionalityTest.java:377)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestContext)[pri:0, instance:tests.CalculatorFunctionalityTest@7d8704ef]" started-at="2026-01-23T16:18:47 IST" name="tearDown" finished-at="2026-01-23T16:18:51 IST" duration-ms="3748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f77b5cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CalculatorFunctionalityTest -->
+      <class name="tests.ResultsPageUiTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext,java.lang.String,java.lang.String)[pri:0, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:51 IST" name="setUp" finished-at="2026-01-23T16:18:55 IST" duration-ms="3611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f77b5cc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[chrome browser started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:55 IST" name="setUp" finished-at="2026-01-23T16:18:55 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="resultPageCheck(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:55 IST" name="resultPageCheck" data-provider="resultPageCheck" finished-at="2026-01-23T16:18:55 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[67]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[120/80]]>
+              </value>
+            </param>
+          </params>
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultPageCheck -->
+        <test-method signature="isLogoPresent()[pri:2, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:55 IST" name="isLogoPresent" finished-at="2026-01-23T16:18:55 IST" duration-ms="0" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isLogoPresent -->
+        <test-method signature="isLogoTextPresent()[pri:3, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:55 IST" name="isLogoTextPresent" finished-at="2026-01-23T16:18:55 IST" duration-ms="0" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isLogoTextPresent -->
+        <test-method signature="isResultBoxPresent()[pri:4, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:55 IST" name="isResultBoxPresent" finished-at="2026-01-23T16:18:55 IST" duration-ms="2" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isResultBoxPresent -->
+        <test-method signature="isHeadingPresent()[pri:5, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:55 IST" name="isHeadingPresent" finished-at="2026-01-23T16:18:55 IST" duration-ms="0" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHeadingPresent -->
+        <test-method signature="isResultDisplayed()[pri:6, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:55 IST" name="isResultDisplayed" finished-at="2026-01-23T16:18:55 IST" duration-ms="0" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isResultDisplayed -->
+        <test-method signature="isFeedbackBoxdisplayed()[pri:7, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:55 IST" name="isFeedbackBoxdisplayed" finished-at="2026-01-23T16:18:55 IST" duration-ms="0" status="SKIP">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFeedbackBoxdisplayed -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestContext)[pri:0, instance:tests.ResultsPageUiTest@1e178745]" started-at="2026-01-23T16:18:55 IST" name="tearDown" finished-at="2026-01-23T16:18:58 IST" duration-ms="3135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f77b5cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ResultsPageUiTest -->
+      <class name="hooks.SuiteHooks">
+        <test-method is-config="true" signature="generateAiTestData()[pri:0, instance:hooks.SuiteHooks@5bda8e08]" started-at="2026-01-23T16:18:39 IST" name="generateAiTestData" finished-at="2026-01-23T16:18:41 IST" duration-ms="1979" status="FAIL">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+at ai.AIService.generateResponse(AIService.java:53)
+at hooks.SuiteHooks.generateAiTestData(SuiteHooks.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
+... 46 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateAiTestData -->
+      </class> <!-- hooks.SuiteHooks -->
+    </test> <!-- chrome test -->
+  </suite> <!-- VitalGuard Suite -->
+</testng-results>

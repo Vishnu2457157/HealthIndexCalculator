@@ -1,0 +1,2854 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Health Index Calculator Test Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 19, 2026 10:14:55 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">ResultsPageUiTest</a><a class="dropdown-item" href="#">CalculatorFunctionalityTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isFormHeadingPresent</p>
+            <p class="text-sm">
+              <span>10:15:02 pm</span> / <span>00:00:00:126</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isFormHeadingPresent</h5>
+<span class='badge badge-success'>01.19.2026 10:15:02 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:02 pm</span>
+<span class='badge badge-default'>00:00:00:126</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:02 pm</td>
+        <td>
+          PASSED: isFormHeadingPresent
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="ResultsPageUiTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">resultPageCheck</p>
+            <p class="text-sm">
+              <span>10:15:05 pm</span> / <span>00:00:01:260</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">resultPageCheck</h5>
+<span class='badge badge-success'>01.19.2026 10:15:05 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:06 pm</span>
+<span class='badge badge-default'>00:00:01:260</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ResultsPageUiTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:05 pm</td>
+        <td>
+          Parameters: [20, 67, 120/80]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:06 pm</td>
+        <td>
+          PASSED: resultPageCheck
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isAgeFieldPresent</p>
+            <p class="text-sm">
+              <span>10:15:06 pm</span> / <span>00:00:00:118</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isAgeFieldPresent</h5>
+<span class='badge badge-success'>01.19.2026 10:15:06 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-default'>00:00:00:118</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:07 pm</td>
+        <td>
+          PASSED: isAgeFieldPresent
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="ResultsPageUiTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isLogoPresent</p>
+            <p class="text-sm">
+              <span>10:15:07 pm</span> / <span>00:00:00:082</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isLogoPresent</h5>
+<span class='badge badge-success'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-default'>00:00:00:082</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ResultsPageUiTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:07 pm</td>
+        <td>
+          PASSED: isLogoPresent
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isPulseRateFieldPresent</p>
+            <p class="text-sm">
+              <span>10:15:07 pm</span> / <span>00:00:00:125</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isPulseRateFieldPresent</h5>
+<span class='badge badge-success'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-default'>00:00:00:125</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:07 pm</td>
+        <td>
+          PASSED: isPulseRateFieldPresent
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="ResultsPageUiTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isLogoTextPresent</p>
+            <p class="text-sm">
+              <span>10:15:07 pm</span> / <span>00:00:00:059</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isLogoTextPresent</h5>
+<span class='badge badge-success'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-default'>00:00:00:059</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ResultsPageUiTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:07 pm</td>
+        <td>
+          PASSED: isLogoTextPresent
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isBloodPressureFieldPresent</p>
+            <p class="text-sm">
+              <span>10:15:07 pm</span> / <span>00:00:00:087</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isBloodPressureFieldPresent</h5>
+<span class='badge badge-success'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-default'>00:00:00:087</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:07 pm</td>
+        <td>
+          PASSED: isBloodPressureFieldPresent
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="ResultsPageUiTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isResultBoxPresent</p>
+            <p class="text-sm">
+              <span>10:15:07 pm</span> / <span>00:00:00:093</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isResultBoxPresent</h5>
+<span class='badge badge-success'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-default'>00:00:00:093</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ResultsPageUiTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:07 pm</td>
+        <td>
+          PASSED: isResultBoxPresent
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isCalculateButtonPresentAndClickable</p>
+            <p class="text-sm">
+              <span>10:15:07 pm</span> / <span>00:00:00:173</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isCalculateButtonPresentAndClickable</h5>
+<span class='badge badge-success'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-default'>00:00:00:173</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:07 pm</td>
+        <td>
+          PASSED: isCalculateButtonPresentAndClickable
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="ResultsPageUiTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isHeadingPresent</p>
+            <p class="text-sm">
+              <span>10:15:07 pm</span> / <span>00:00:00:068</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isHeadingPresent</h5>
+<span class='badge badge-success'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:07 pm</span>
+<span class='badge badge-default'>00:00:00:068</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ResultsPageUiTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:07 pm</td>
+        <td>
+          PASSED: isHeadingPresent
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:09 pm</span> / <span>00:00:01:773</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:09 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:10 pm</span>
+<span class='badge badge-default'>00:00:01:773</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:09 pm</td>
+        <td>
+          Parameters: ["", "", "", negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:10 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:10 pm</span> / <span>00:00:01:319</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:10 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:12 pm</span>
+<span class='badge badge-default'>00:00:01:319</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:10 pm</td>
+        <td>
+          Parameters: [0, 60, 70/31, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:12 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:12 pm</span> / <span>00:00:04:835</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:12 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:17 pm</span>
+<span class='badge badge-default'>00:00:04:835</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:12 pm</td>
+        <td>
+          Parameters: [1, 72, 120/81, positive]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:17 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="14"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:17 pm</span> / <span>00:00:05:145</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:17 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:22 pm</span>
+<span class='badge badge-default'>00:00:05:145</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_69.5__pulse_-25__bp_160_91__type_negative_before_20260119_221518_098.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_69.5__pulse_-25__bp_160_91__type_negative_before_20260119_221518_098.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_69.5__pulse_-25__bp_160_91__type_negative_failed_no_alert_20260119_221521_380.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_69.5__pulse_-25__bp_160_91__type_negative_failed_no_alert_20260119_221521_380.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:17 pm</td>
+        <td>
+          Parameters: [69.5, -25, 160/91, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:22 pm</td>
+        <td>
+          FAILED: sendData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:22 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	NEGATIVE input incorrectly navigated to Result page without showing any alert.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.CalculatorFunctionalityTest.sendData(CalculatorFunctionalityTest.java:200)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:22 pm</td>
+        <td>
+          Pre-submit screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_69.5__pulse_-25__bp_160_91__type_negative_before_20260119_221518_098.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:22 pm</td>
+        <td>
+          Failure screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_69.5__pulse_-25__bp_160_91__type_negative_failed_no_alert_20260119_221521_380.png
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:22 pm</span> / <span>00:00:01:722</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:22 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:23 pm</span>
+<span class='badge badge-default'>00:00:01:722</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:22 pm</td>
+        <td>
+          Parameters: [120, Seventy Two, 0/0, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:23 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:23 pm</span> / <span>00:00:01:459</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:23 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:25 pm</span>
+<span class='badge badge-default'>00:00:01:459</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:23 pm</td>
+        <td>
+          Parameters: [121, @$%, 0/0, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:25 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:25 pm</span> / <span>00:00:01:703</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:25 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:27 pm</span>
+<span class='badge badge-default'>00:00:01:703</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:25 pm</td>
+        <td>
+          Parameters: [120.5, 80yrs, 1000/1000, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:27 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:27 pm</span> / <span>00:00:00:929</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:27 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:28 pm</span>
+<span class='badge badge-default'>00:00:00:929</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:27 pm</td>
+        <td>
+          Parameters: [abc, 1000, abc, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:28 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:28 pm</span> / <span>00:00:01:202</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:28 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:29 pm</span>
+<span class='badge badge-default'>00:00:01:202</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:28 pm</td>
+        <td>
+          Parameters: [@#, 65.5, abc/abc, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:29 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:29 pm</span> / <span>00:00:01:231</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:29 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:30 pm</span>
+<span class='badge badge-default'>00:00:01:231</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:29 pm</td>
+        <td>
+          Parameters: [e, "", *(@), negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:30 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:30 pm</span> / <span>00:00:01:018</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:30 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:31 pm</span>
+<span class='badge badge-default'>00:00:01:018</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:30 pm</td>
+        <td>
+          Parameters: [-1, 55, -1, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:31 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="22"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:31 pm</span> / <span>00:00:04:622</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:31 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:36 pm</span>
+<span class='badge badge-default'>00:00:04:622</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_35__pulse_80__bp_80_120__type_negative_before_20260119_221532_329.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_35__pulse_80__bp_80_120__type_negative_before_20260119_221532_329.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_35__pulse_80__bp_80_120__type_negative_failed_no_alert_20260119_221535_639.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_35__pulse_80__bp_80_120__type_negative_failed_no_alert_20260119_221535_639.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:31 pm</td>
+        <td>
+          Parameters: [35, 80, 80/120, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:36 pm</td>
+        <td>
+          FAILED: sendData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:36 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	NEGATIVE input incorrectly navigated to Result page without showing any alert.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.CalculatorFunctionalityTest.sendData(CalculatorFunctionalityTest.java:200)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:36 pm</td>
+        <td>
+          Pre-submit screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_35__pulse_80__bp_80_120__type_negative_before_20260119_221532_329.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:36 pm</td>
+        <td>
+          Failure screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_35__pulse_80__bp_80_120__type_negative_failed_no_alert_20260119_221535_639.png
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="23"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:36 pm</span> / <span>00:00:05:004</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:36 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:41 pm</span>
+<span class='badge badge-default'>00:00:05:004</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_42__pulse_70__bp_0_100__type_negative_before_20260119_221537_198.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_42__pulse_70__bp_0_100__type_negative_before_20260119_221537_198.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_42__pulse_70__bp_0_100__type_negative_failed_no_alert_20260119_221540_630.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_42__pulse_70__bp_0_100__type_negative_failed_no_alert_20260119_221540_630.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:36 pm</td>
+        <td>
+          Parameters: [42, 70, 0/100, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:41 pm</td>
+        <td>
+          FAILED: sendData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:41 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	NEGATIVE input incorrectly navigated to Result page without showing any alert.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.CalculatorFunctionalityTest.sendData(CalculatorFunctionalityTest.java:200)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:41 pm</td>
+        <td>
+          Pre-submit screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_42__pulse_70__bp_0_100__type_negative_before_20260119_221537_198.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:41 pm</td>
+        <td>
+          Failure screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_42__pulse_70__bp_0_100__type_negative_failed_no_alert_20260119_221540_630.png
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="24"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:41 pm</span> / <span>00:00:05:396</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:41 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:46 pm</span>
+<span class='badge badge-default'>00:00:05:396</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_55__pulse_100__bp_122_0__type_negative_before_20260119_221542_490.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_55__pulse_100__bp_122_0__type_negative_before_20260119_221542_490.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_55__pulse_100__bp_122_0__type_negative_failed_no_alert_20260119_221545_868.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_55__pulse_100__bp_122_0__type_negative_failed_no_alert_20260119_221545_868.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:41 pm</td>
+        <td>
+          Parameters: [55, 100, 122/0, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:46 pm</td>
+        <td>
+          FAILED: sendData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:46 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	NEGATIVE input incorrectly navigated to Result page without showing any alert.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.CalculatorFunctionalityTest.sendData(CalculatorFunctionalityTest.java:200)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:46 pm</td>
+        <td>
+          Pre-submit screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_55__pulse_100__bp_122_0__type_negative_before_20260119_221542_490.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:46 pm</td>
+        <td>
+          Failure screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_55__pulse_100__bp_122_0__type_negative_failed_no_alert_20260119_221545_868.png
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="25"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:46 pm</span> / <span>00:00:04:765</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:46 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:51 pm</span>
+<span class='badge badge-default'>00:00:04:765</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_63__pulse_65__bp_120_120__type_negative_before_20260119_221547_603.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_63__pulse_65__bp_120_120__type_negative_before_20260119_221547_603.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_63__pulse_65__bp_120_120__type_negative_failed_no_alert_20260119_221550_847.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_63__pulse_65__bp_120_120__type_negative_failed_no_alert_20260119_221550_847.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:46 pm</td>
+        <td>
+          Parameters: [63, 65, 120/120, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:51 pm</td>
+        <td>
+          FAILED: sendData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:15:51 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	NEGATIVE input incorrectly navigated to Result page without showing any alert.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.CalculatorFunctionalityTest.sendData(CalculatorFunctionalityTest.java:200)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:51 pm</td>
+        <td>
+          Pre-submit screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_63__pulse_65__bp_120_120__type_negative_before_20260119_221547_603.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:51 pm</td>
+        <td>
+          Failure screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_63__pulse_65__bp_120_120__type_negative_failed_no_alert_20260119_221550_847.png
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:51 pm</span> / <span>00:00:01:487</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:51 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:52 pm</span>
+<span class='badge badge-default'>00:00:01:487</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:51 pm</td>
+        <td>
+          Parameters: [29, 75, 120/, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:52 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:52 pm</span> / <span>00:00:01:548</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:52 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:54 pm</span>
+<span class='badge badge-default'>00:00:01:548</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:52 pm</td>
+        <td>
+          Parameters: [31, 68, /80, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:54 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:54 pm</span> / <span>00:00:04:548</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:54 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:15:59 pm</span>
+<span class='badge badge-default'>00:00:04:548</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:54 pm</td>
+        <td>
+          Parameters: [25, 72, 118/76, positive]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:15:59 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:15:59 pm</span> / <span>00:00:04:645</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:15:59 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:03 pm</span>
+<span class='badge badge-default'>00:00:04:645</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:15:59 pm</td>
+        <td>
+          Parameters: [34, 64, 110/70, positive]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:16:03 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:16:03 pm</span> / <span>00:00:04:445</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:16:03 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:08 pm</span>
+<span class='badge badge-default'>00:00:04:445</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:16:03 pm</td>
+        <td>
+          Parameters: [47, 82, 130/85, positive]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:16:08 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:16:08 pm</span> / <span>00:00:04:930</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:16:08 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:13 pm</span>
+<span class='badge badge-default'>00:00:04:930</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:16:08 pm</td>
+        <td>
+          Parameters: [58, 96, 140/95, positive]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:16:13 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:16:13 pm</span> / <span>00:00:04:587</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:16:13 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:17 pm</span>
+<span class='badge badge-default'>00:00:04:587</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:16:13 pm</td>
+        <td>
+          Parameters: [72, 60, 150/100, positive]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:16:17 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:16:17 pm</span> / <span>00:00:04:818</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:16:17 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:22 pm</span>
+<span class='badge badge-default'>00:00:04:818</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:16:17 pm</td>
+        <td>
+          Parameters: [5, 100, 95/60, positive]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:16:22 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:16:22 pm</span> / <span>00:00:04:861</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:16:22 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:27 pm</span>
+<span class='badge badge-default'>00:00:04:861</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:16:22 pm</td>
+        <td>
+          Parameters: [88, 58, 160/70, positive]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:16:27 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:16:27 pm</span> / <span>00:00:04:244</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:16:27 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:31 pm</span>
+<span class='badge badge-default'>00:00:04:244</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:16:27 pm</td>
+        <td>
+          Parameters: [40, 40, 90/50, positive]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:16:31 pm</td>
+        <td>
+          PASSED: sendData
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="36"
+          author=""
+          tag="CalculatorFunctionalityTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">sendData</p>
+            <p class="text-sm">
+              <span>10:16:31 pm</span> / <span>00:00:05:077</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">sendData</h5>
+<span class='badge badge-success'>01.19.2026 10:16:31 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:36 pm</span>
+<span class='badge badge-default'>00:00:05:077</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CalculatorFunctionalityTest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_40__pulse_140__bp_170_110__type_negative_before_20260119_221632_671.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_40__pulse_140__bp_170_110__type_negative_before_20260119_221632_671.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_40__pulse_140__bp_170_110__type_negative_failed_no_alert_20260119_221636_169.png' src="C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_40__pulse_140__bp_170_110__type_negative_failed_no_alert_20260119_221636_169.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:16:31 pm</td>
+        <td>
+          Parameters: [40, 140, 170/110, negative]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:16:36 pm</td>
+        <td>
+          FAILED: sendData
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:16:36 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	NEGATIVE input incorrectly navigated to Result page without showing any alert.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.CalculatorFunctionalityTest.sendData(CalculatorFunctionalityTest.java:200)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+	at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:16:36 pm</td>
+        <td>
+          Pre-submit screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_40__pulse_140__bp_170_110__type_negative_before_20260119_221632_671.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:16:36 pm</td>
+        <td>
+          Failure screenshot: C:\Users\2457157\IdeaProjects\HealthIndexCalculator\reports\screenshots\age_40__pulse_140__bp_170_110__type_negative_failed_no_alert_20260119_221636_169.png
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag="ResultsPageUiTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isResultDisplayed</p>
+            <p class="text-sm">
+              <span>10:16:41 pm</span> / <span>00:00:00:048</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isResultDisplayed</h5>
+<span class='badge badge-success'>01.19.2026 10:16:41 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:41 pm</span>
+<span class='badge badge-default'>00:00:00:048</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ResultsPageUiTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:16:41 pm</td>
+        <td>
+          PASSED: isResultDisplayed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag="ResultsPageUiTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">isFeedbackBoxdisplayed</p>
+            <p class="text-sm">
+              <span>10:16:41 pm</span> / <span>00:00:00:022</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isFeedbackBoxdisplayed</h5>
+<span class='badge badge-success'>01.19.2026 10:16:41 pm</span>
+<span class='badge badge-danger'>01.19.2026 10:16:41 pm</span>
+<span class='badge badge-default'>00:00:00:022</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">ResultsPageUiTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:16:41 pm</td>
+        <td>
+          PASSED: isFeedbackBoxdisplayed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:16:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='36'>sendData</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">ResultsPageUiTest</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>ResultsPageUiTest</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>resultPageCheck</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>isLogoPresent</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>isLogoTextPresent</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>isResultBoxPresent</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>isHeadingPresent</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='37' id='37'>isResultDisplayed</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='38' id='38'>isFeedbackBoxdisplayed</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>25</span>
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">CalculatorFunctionalityTest</p>
+<p class="duration text-sm">31 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>CalculatorFunctionalityTest</h4>
+<span status="pass" class='badge log pass-bg'>25 passed</span>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>isFormHeadingPresent</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>isAgeFieldPresent</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>isPulseRateFieldPresent</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>isBloodPressureFieldPresent</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>isCalculateButtonPresentAndClickable</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:15:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:15:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>sendData</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:16:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='36'>sendData</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 19, 2026 10:14:55 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 19, 2026 10:16:43 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>32</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>6</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='84%'>
+<b>32</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='15%'><b>6</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='38%'><b>32</b> events passed</small></div>
+<div>
+<small data-tooltip='14%'><b>12</b> events failed,
+<b data-tooltip='%'>39</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"isFormHeadingPresent":0.126,"resultPageCheck":1.26,"isAgeFieldPresent":0.118,"isLogoPresent":0.082,"isPulseRateFieldPresent":0.125,"isLogoTextPresent":0.059,"isBloodPressureFieldPresent":0.087,"isResultBoxPresent":0.093,"isCalculateButtonPresentAndClickable":0.173,"isHeadingPresent":0.068,"sendData":1.773,"sendData":1.319,"sendData":4.835,"sendData":5.145,"sendData":1.722,"sendData":1.459,"sendData":1.703,"sendData":0.929,"sendData":1.202,"sendData":1.231,"sendData":1.018,"sendData":4.622,"sendData":5.004,"sendData":5.396,"sendData":4.765,"sendData":1.487,"sendData":1.548,"sendData":4.548,"sendData":4.645,"sendData":4.445,"sendData":4.93,"sendData":4.587,"sendData":4.818,"sendData":4.861,"sendData":4.244,"sendData":5.077,"isResultDisplayed":0.048,"isFeedbackBoxdisplayed":0.022
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>ResultsPageUiTest</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>CalculatorFunctionalityTest</td>
+<td>25</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>80.645%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>21</td>
+</tr>
+<tr>
+<td>User</td>
+<td>2457157</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>chrome</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 32,
+failParent: 6,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 32,
+failEvents: 12,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 39
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

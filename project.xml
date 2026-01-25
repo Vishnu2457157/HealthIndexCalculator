@@ -7,13 +7,12 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="os" value="windows"/>
         <classes>
-            <class name="hooks.SuiteHooks"/>
-<!--            <class name="tests.UrlValidationTest"/>-->
-<!--            <class name="tests.HomePageValidationTest"/>-->
-<!--            <class name="tests.HeartPulsePageValidationTest"/>-->
-<!--            <class name="tests.BloodPressurePageValidationTest"/>-->
-<!--            <class name="tests.AgeFactorPageValidationTest"/>-->
-<!--            <class name="tests.TeamDetailsPageValidationTest"/>-->
+            <class name="tests.UrlValidationTest"/>
+            <class name="tests.HomePageValidationTest"/>
+            <class name="tests.HeartPulsePageValidationTest"/>
+            <class name="tests.BloodPressurePageValidationTest"/>
+            <class name="tests.AgeFactorPageValidationTest"/>
+            <class name="tests.TeamDetailsPageValidationTest"/>
             <class name="tests.CalculatorFunctionalityTest"/>
             <class name="tests.ResultsPageUiTest"/>
         </classes>

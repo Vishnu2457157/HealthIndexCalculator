@@ -21,15 +21,15 @@ import static org.testng.Assert.assertTrue;
 
 
 public class ResultsPageUiTest extends BaseTest {
-    TopNavigation topNav;
-    ResultPage res;
-    CalculatorForm cf;
+
+
+
 
     @BeforeClass
     public void setUp() {
         log.info("Initializing page objects: TopNavigation, CalculatorForm, ResultPage");
 
-        topNav = new TopNavigation(driver);
+        tn = new TopNavigation(driver);
         cf = new CalculatorForm(driver);
         res = new ResultPage(driver);
 

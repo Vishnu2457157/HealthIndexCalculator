@@ -15,18 +15,14 @@ import java.io.File;
 import java.time.Duration;
 import static org.testng.Assert.assertTrue;
 public class CalculatorFunctionalityTest extends BaseTest {
-    CalculatorForm cf;
-    ExcelDataManager df;
-    TopNavigation tp;
-    WebDriverWait wait;
+
     @BeforeClass
     public void setUp(ITestContext context) {
         log.info("Initializing CalculatorForm, ExcelDataManager, TopNavigation");
+        cf=new CalculatorForm(driver);
+        df=new ExcelDataManager();
+        tn=new TopNavigation(driver);
         Reporter.log("Initializing test dependencies for CalculatorFunctionalityTest", true);
-        df = new ExcelDataManager();
-        cf = new CalculatorForm(driver);
-        tp = new TopNavigation(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         context.setAttribute("driver", driver);
         log.info("Setup complete for CalculatorFunctionalityTest");
         Reporter.log("Setup complete for CalculatorFunctionalityTest", true);
@@ -125,14 +121,14 @@ public class CalculatorFunctionalityTest extends BaseTest {
                 boolean navigated = driver.getCurrentUrl().toLowerCase().contains("result");
                 if (isPositive && navigated) {
                     log.info("Positive case passed: navigated to results page; returning Home via logo text");
-                    tp.clickLogoText();
+                    tn.clickLogoText();
                     log.info("Clicked 'VitalGuard' logo text to return Home");
                 } else if (isNegative && navigated) {
                     File failure = ScreenshotUtil.takeScreenshotToFile(driver, baseName + "_failed_no_alert");
                     Reporter.getCurrentTestResult().setAttribute("failureScreenshotPath", failure.getAbsolutePath());
                     sa.fail("NEGATIVE input incorrectly navigated to Result page without showing any alert.");
                     log.error("Negative case failed: navigated without alert");
-                    tp.clickLogoText();
+                    tn.clickLogoText();
                     Reporter.log("Clicked 'VitalGuard' to return Home (negative case)", true);
                 }
             }

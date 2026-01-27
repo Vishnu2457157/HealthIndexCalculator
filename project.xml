@@ -7,6 +7,7 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="os" value="windows"/>
         <classes>
+            <class name="tests.BaseTest"/>
             <class name="tests.UrlValidationTest"/>
             <class name="tests.HomePageValidationTest"/>
             <class name="tests.HeartPulsePageValidationTest"/>

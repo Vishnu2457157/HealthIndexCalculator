@@ -7,11 +7,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Reporter;
+import pages.*;
+import utils.ExcelDataManager;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,6 +25,17 @@ public class BaseTest {
     protected WebDriver driver;
     Logger log = LoggerFactory.getLogger(this.getClass());
     Properties p;
+    AgeFactorPage af;
+    TopNavigation tn;
+    BloodPressurePage bp;
+    CalculatorForm cf;
+    ExcelDataManager df;
+    TopNavigation tp;
+    WebDriverWait wait;
+    HeartPulsePage hp;
+    HomePage home;
+    ResultPage res;
+    TeamDetails td;
     @BeforeClass(alwaysRun = true)
     @Parameters({"browser","os"})
     public void setUp(ITestContext context,  @Optional("chrome") String browser,@Optional("windows") String os) throws IOException {

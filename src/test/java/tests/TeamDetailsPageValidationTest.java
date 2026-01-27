@@ -11,15 +11,15 @@ import pages.TopNavigation;
 import static org.testng.Assert.assertTrue;
 
 public class TeamDetailsPageValidationTest extends BaseTest {
-    TeamDetails td;
-    TopNavigation tn;
+
+
 
     @BeforeClass
     public void setup() {
         log.info("Initializing page objects: TeamDetails, TopNavigation");
 
-        this.td = new TeamDetails(driver);
-        this.tn = new TopNavigation(driver);
+       td = new TeamDetails(driver);
+       tn = new TopNavigation(driver);
 
         log.info("Navigating to Team Details page via TopNavigation");
         tn.goToTeamDetails();

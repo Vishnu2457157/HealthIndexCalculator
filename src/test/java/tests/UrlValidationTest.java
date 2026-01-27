@@ -8,16 +8,13 @@ import pages.TopNavigation;
 import static org.testng.AssertJUnit.assertTrue;
 
 public class UrlValidationTest extends BaseTest {
-    TopNavigation tp;
-    HomePage hp;
+
 
     @BeforeClass
     public void setUp() {
         log.info("Initializing page objects: TopNavigation, HomePage");
-
-        tp = new TopNavigation(driver);
-        hp = new HomePage(driver);
-
+        tn=new TopNavigation(driver);
+        home=new HomePage(driver);
         log.info("Setup completed for UrlValidationTest");
     }
 
@@ -25,9 +22,9 @@ public class UrlValidationTest extends BaseTest {
     public void isURLWorking() {
         log.info("=== Starting 'isURLWorking' test ===");
 
-        boolean navBarPresent = tp.isNavBarPresent();
-        boolean leftImagePresent = hp.isLeftImagePresent();
-        boolean calculatorPresent = hp.isCalculatorPresent();
+        boolean navBarPresent = tn.isNavBarPresent();
+        boolean leftImagePresent = home.isLeftImagePresent();
+        boolean calculatorPresent = home.isCalculatorPresent();
 
         log.info("NavBar present? " + navBarPresent);
         log.info("Left image present? " + leftImagePresent);

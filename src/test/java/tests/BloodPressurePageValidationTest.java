@@ -8,17 +8,17 @@ import static org.testng.Assert.assertTrue;
 
 public class BloodPressurePageValidationTest extends BaseTest {
 
-    private BloodPressurePage bp;
+
 
     @BeforeClass(alwaysRun = true)
     public void setUp() {
         log.info("Initializing BloodPressurePage and TopNavigation...");
 
         bp = new BloodPressurePage(driver);
-        TopNavigation tp = new TopNavigation(driver);
+        tn=new TopNavigation(driver);
 
         log.info("Navigating to 'Blood Pressure' via top navigation...");
-        tp.goToBloodPressure();
+        tn.goToBloodPressure();
 
         // Synchronize: wait until Blood Pressure page unique element is visible (handled in POM ideally)
 

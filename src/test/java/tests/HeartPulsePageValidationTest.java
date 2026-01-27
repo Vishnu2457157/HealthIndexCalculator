@@ -8,16 +8,15 @@ import pages.TopNavigation;
 
 public class HeartPulsePageValidationTest extends BaseTest {
 
-    TopNavigation tn;
-    HeartPulsePage hp;
+
+
 
     @BeforeClass
     public void setUp() {
         log.info("Initializing HeartPulsePage and TopNavigation with driver {}", driver);
 
-        this.hp = new HeartPulsePage(driver);
-        this.tn = new TopNavigation(driver);
-
+        hp=new HeartPulsePage(driver);
+        tn=new TopNavigation(driver);
         log.info("Navigating to 'Heart Pulse' via top navigation");
         tn.goToHeartPulse();
 

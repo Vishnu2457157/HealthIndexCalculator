@@ -8,8 +8,7 @@ import pages.TopNavigation;
 import static org.testng.Assert.assertTrue;
 
 public class AgeFactorPageValidationTest extends BaseTest {
-    AgeFactorPage af;
-    TopNavigation tn;
+
 
     @BeforeClass
     public void setup() {

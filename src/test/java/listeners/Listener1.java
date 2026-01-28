@@ -1,4 +1,3 @@
-
 package listeners;
 
 import com.aventstack.extentreports.*;
@@ -9,8 +8,11 @@ import org.slf4j.LoggerFactory;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import utils.AIFailureAnalyzer;
 
 import java.io.File;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -23,11 +25,12 @@ public class Listener1 implements ITestListener {
     // One ExtentTest per executing thread (works for parallel runs)
     private final ConcurrentHashMap<Long, ExtentTest> testMap = new ConcurrentHashMap<>();
     String reportName;
+
     @Override
     public void onStart(ITestContext context) {
-        String timeStamp=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-        reportName="Test-Report"+timeStamp+".html";
-        String reportPath = System.getProperty("user.dir") + "/reports/"+reportName;
+        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+        reportName = "Test-Report" + timeStamp + ".html";
+        String reportPath = System.getProperty("user.dir") + "/reports/" + reportName;
         log.info("Initializing ExtentReports. Report path: {}", reportPath);
 
         ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
@@ -50,6 +53,11 @@ public class Listener1 implements ITestListener {
             extent.setSystemInfo("Browser", browser);
             log.info("System info set: Browser={}", browser);
         }
+
+        // Add AI analyzer info
+        AIFailureAnalyzer ai = AIFailureAnalyzer.getInstance();
+        extent.setSystemInfo("AI Failure Analysis", ai.isEnabled() ? "Enabled" : "Disabled");
+        extent.setSystemInfo("AI Model", "gpt-4o");
 
         log.info("ExtentReports initialization complete");
     }
@@ -78,9 +86,6 @@ public class Listener1 implements ITestListener {
         log.info("onTestSuccess -> {}", name);
 
         test().pass("PASSED: " + name);
-
-        // Requirement: screenshots should be saved only if the test failed.
-        // So delete the pre-submit screenshot (if any) for passed tests.
         String prePath = asString(result.getAttribute("preSubmitScreenshotPath"));
         if (prePath != null) {
             log.info("Deleting pre-submit screenshot for passed test: {}", prePath);
@@ -98,8 +103,7 @@ public class Listener1 implements ITestListener {
             test().fail(result.getThrowable());
         }
 
-        // Do NOT take screenshots here (per requirement).
-        // Attach the screenshots captured in the test class.
+        // Attach screenshots (if provided by the test)
         String prePath = asString(result.getAttribute("preSubmitScreenshotPath"));
         String failPath = asString(result.getAttribute("failureScreenshotPath"));
 
@@ -130,6 +134,38 @@ public class Listener1 implements ITestListener {
             log.info("No failure screenshot path provided by the test.");
             test().log(Status.INFO, "No failure screenshot path was provided by the test.");
         }
+
+        // ==== AI Failure Analysis ====
+        try {
+            AIFailureAnalyzer ai = AIFailureAnalyzer.getInstance();
+
+            final String testName = result.getMethod() != null ? result.getMethod().getMethodName() : name;
+            final Throwable t = result.getThrowable();
+            final String errorMessage = t != null && t.getMessage() != null ? t.getMessage() : "No error message";
+            final String stackTrace = getStackTraceAsString(t);
+            final Object[] params = result.getParameters();
+
+            // Prepend a human-rendered parameters block before AI output (guaranteed visibility of ALL params)
+            String paramsHtml = renderParametersBlock(params);
+
+            String analysis = ai.analyzeFailure(testName, errorMessage, stackTrace, params);
+            if (analysis != null && !analysis.isEmpty()) {
+                String html = ai.formatForExtentReport(analysis);
+                if (html != null) {
+                    test().info(paramsHtml + html); // parameters + AI analysis
+                    log.info("AI Failure Analysis attached to report for test: {}", testName);
+                } else {
+                    test().info(paramsHtml);
+                }
+            } else {
+                log.warn("AI Failure Analysis returned no content for test: {}", testName);
+                test().info(paramsHtml);
+                test().log(Status.INFO, "🤖 AI Failure Analysis: Not available (token missing or service error).");
+            }
+        } catch (Exception e) {
+            log.warn("AI Failure Analysis step failed: {}", e.getMessage());
+            test().log(Status.WARNING, "AI Failure Analysis step failed: " + e.getMessage());
+        }
     }
 
     @Override
@@ -142,7 +178,6 @@ public class Listener1 implements ITestListener {
             test().skip(result.getThrowable());
         }
 
-        // Optional: cleanup pre-submit file even for skipped tests
         String prePath = asString(result.getAttribute("preSubmitScreenshotPath"));
         if (prePath != null) {
             log.info("Deleting pre-submit screenshot for skipped test: {}", prePath);
@@ -196,5 +231,61 @@ public class Listener1 implements ITestListener {
             // Intentionally ignore to avoid failing the listener due to FS issues
             log.warn("safeDelete encountered exception for {}: {}", path, e.getMessage());
         }
+    }
+
+    /** Convert Throwable stack trace to String (no external libs). */
+    private String getStackTraceAsString(Throwable t) {
+        if (t == null) return "No stack trace available";
+        try (StringWriter sw = new StringWriter(); PrintWriter pw = new PrintWriter(sw)) {
+            t.printStackTrace(pw);
+            pw.flush();
+            return sw.toString();
+        } catch (Exception e) {
+            return "Failed to capture stack trace: " + e.getMessage();
+        }
+    }
+
+    /** Render all parameters in a styled HTML block (ensures full visibility in the report). */
+    private String renderParametersBlock(Object[] params) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("<div style='background:#0f1624;padding:10px;border-left:4px solid #888;margin:10px 0;'>")
+                .append("<b style='color:#bbb;'>Test Parameters (echo):</b><br/>")
+                .append("<pre style='white-space:pre-wrap;color:#e6e6e6;margin:0;'>");
+
+        if (params != null && params.length > 0) {
+            for (int i = 0; i < params.length; i++) {
+                Object p = params[i];
+                String type = (p == null) ? "null" : p.getClass().getSimpleName();
+                String value = (p == null) ? "null" : String.valueOf(p);
+                if(i==0){
+                    sb.append("Age: ");
+                }
+                else if(i==1){
+                    sb.append("Pulse Rate: ");
+                }
+                else if(i==2){
+                    sb.append("Blood Pressure: ");
+                }
+                else{
+                    sb.append("Test-Type: ");
+                }
+                sb.append(escapeForHtml(value)).append("\n");
+            }
+        } else {
+            sb.append("No parameters");
+        }
+
+        sb.append("</pre></div>");
+        return sb.toString();
+    }
+
+    /** Escape HTML for safe rendering in Extent step logs. */
+    private String escapeForHtml(String s) {
+        if (s == null) return "";
+        return s.replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+                .replace("\"", "&quot;")
+                .replace("'", "&#39;");
     }
 }

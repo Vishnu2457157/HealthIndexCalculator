@@ -255,7 +255,6 @@ public class Listener1 implements ITestListener {
         if (params != null && params.length > 0) {
             for (int i = 0; i < params.length; i++) {
                 Object p = params[i];
-                String type = (p == null) ? "null" : p.getClass().getSimpleName();
                 String value = (p == null) ? "null" : String.valueOf(p);
                 if(i==0){
                     sb.append("Age: ");

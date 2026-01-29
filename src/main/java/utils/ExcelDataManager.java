@@ -19,7 +19,6 @@ public class ExcelDataManager {
         for(int i=1;i<=rows;i++){
             XSSFRow row= sheet.getRow(i);
             for(int j=0;j<cols;j++){
-
                 XSSFCell cell=row.getCell(j);
                 data[i-1][j]=formatter.formatCellValue(cell);
             }
